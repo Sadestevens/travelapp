@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+
+  root 'sessions#new'
+
   resources :comments, only: [:create, :index]
 
   resources :suggestions, only: [:create, :destroy]
