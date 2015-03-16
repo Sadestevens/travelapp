@@ -10,20 +10,26 @@
 
 
 User.create([
-  { first_name: "Angelina", last_name: "Bethoney", username: "female", email: "ambethoney@yahoo.com", password: "password"},
-  { first_name: "Sarah", last_name: "McAlear", username: "female", email: "sarahm@yahoo.com", password: "password"},
-  { first_name: "Brian", last_name: "Rucker", username: "male", email: "brucker@gmail.com", password: "password"}
+  { first_name: "Tiffany",  last_name: "Poss",    username: "female", email: "tposs@gmail.com",          password: "password"},
+  { first_name: "Sage",     last_name: "Kieran",  username: "male",   email: "sagekieran@gmail.com",     password: "password"},
+  { first_name: "Mike",     last_name: "Rembach", username: "male",   email: "mikerembach@gmail.com",    password: "password"},
+  { first_name: "Sade",     last_name: "Stevens", username: "FEmale", email: "saDestevens@gmail.com",    password: "password"}
+])
+
+Trip.create([
+  { location: "Mexico", title: "Spring Break", title: "going to cancun and getting crazy, but not too crazy!", duration: "April 10, 2015 - April 14, 2015"},
+  { location: "Mexico", title: "Spring Break", title: "going to cancun and getting crazy, but not too crazy!", duration: "April 10, 2015 - April 14, 2015"},
+  { location: "Mexico", title: "Spring Break", title: "going to cancun and getting crazy, but not too crazy!", duration: "April 10, 2015 - April 14, 2015"},
+  { location: "Mexico", title: "Spring Break", title: "going to cancun and getting crazy, but not too crazy!", duration: "April 10, 2015 - April 14, 2015"}
 ])
 
 
-
-
-  create_table "users", force: :cascade do |t|
-    t.string   "first_name",      null: false
-    t.string   "last_name",       null: false
-    t.string   "username",        null: false
-    t.string   "email",           null: false
-    t.string   "password_digest", null: false
-    t.string   "session_token"
-    t.datetime "created_at",      null: false
-    t.datetime "updated_at",      null: false
+  create_table "trips", force: :cascade do |t|
+    t.integer  "group_id"
+    t.integer  "user_id",     null: false
+    t.string   "location",    null: false
+    t.string   "title",       null: false
+    t.string   "description"
+    t.string   "duration"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
