@@ -1,3 +1,7 @@
+<%# app/views/sessions/new.html.erb %>
+<%= link_to "Login with Google!", '/auth/google_oauth2' %>
+
+
 <h1>Login</h1>
 <%= form_for @user, as: :session, url: session_url do |f| %>
   <%= f.text_field :email, placeholder: "email address" %>

@@ -6,8 +6,9 @@ class SessionsController < ApplicationController
   end
 
   def create
-    @user = User.find_by(email: session_params[:email])
+    @auth = request.env['omniauth.auth']['credentials']
 
+    @user = User.find_by(email: session_params[:email])
     if @user && @user.authenticate(session_params[:password])
       login!(@user)
       redirect_to '/'
