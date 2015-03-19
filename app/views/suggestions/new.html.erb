@@ -1,5 +1,35 @@
 <h1>New Suggestion</h1>
 
-<%= render 'form' %>
+<!DOCTYPE html>
+<html>
+<head>
+<%= stylesheet_link_tag
+  "http://ajax.googleapis.com/ajax/libs/jqueryui/1.7.2/themes/redmond/jquery-ui.css"
+  "application" %>
+<% javascript_include_tag
+"http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"
+"http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.1/jquery-ui.min.js"
+"application" %>
+</head>
+<body>
 
-<%= link_to 'Back', suggestions_path %>
+
+<% form_for Suggestion.new do |f| %>
+  <p>
+  <%= f.label :title, "Title" %><br/>
+  <%= f.text_field :title %>
+  </p>
+  <p>
+  <%= f.label :chosen_date, "Date" %><br/>
+  <%= f.text_field :chosen_date %>
+  </p>
+  <p>
+  <%= f.label :content, "Content" %><br/>
+  <%= f.text_area :content, :rows => "10", :cols => "30" %>
+  </p>
+  <p><%= f.submit "Save" %></p>
+  <% end %>
+
+</body>
+</html>
+
