@@ -1,6 +1,6 @@
-// # Place all the behaviors and hooks related to the matching controller here.
-// # All this logic will automatically be available in application.js.
-// # You can use CoffeeScript in this file: http://coffeescript.org/
+// Place all the behaviors and hooks related to the matching controller here.
+// All this logic will automatically be available in application.js.
+// You can use CoffeeScript in this file: http://coffeescript.org/
 
 // /return_current_user
 
@@ -117,7 +117,7 @@ xhr.addEventListener('load', function(e) {
 			thread_heading.removeChild(thread_heading.lastChild);
 		}
 
-		
+
    		//this deletes content from other categories
 		var comment_container = document.getElementById('comment_container');
    		while( comment_container.hasChildNodes() ){
@@ -162,7 +162,7 @@ var CategorySuggestions = function(category_id){
 		index_suggestion.appendChild(suggestion_heading);
 
 		var a = document.createElement('a');
-		//this needs to be changed once 
+		//this needs to be changed once
 		a.href = "#";
 		a.innerHTML = "Create New Suggestion";
 		suggestion_heading.appendChild(a);

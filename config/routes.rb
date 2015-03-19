@@ -40,7 +40,7 @@ Rails.application.routes.draw do
 
   get '/' => 'mains#index'
 
-  get '/calendar' => 'suggestions#new'
+  get '/datepicker' => 'suggestions#new'
 
 
   # The priority is based upon order of creation: first created -> highest priority.

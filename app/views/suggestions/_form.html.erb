@@ -1,20 +1,17 @@
-  <div class="field">
-    <%= f.label :location %><br>
-    <%= f.text_field :location %>
-  </div>
-  <div class="field">
-    <%= f.label :title %><br>
+  <h1>New Suggestion</h1>
+
+  <%= form_for @suggestion do |f| %>
+    <p>
+    <%= f.label :title, "Title" %><br/>
     <%= f.text_field :title %>
-  </div>
-  <div class="field">
-    <%= f.label :description %><br>
-    <%= f.text_field :description %>
-  </div>
-  <div class="field">
-    <%= f.label :duration %><br>
-    <%= f.text_field :duration %>
-  </div>
-  <div class="actions">
-    <%= f.submit %>
-  </div>
-<% end %>
+    </p>
+    <p>
+    <%= f.label :chosen_date, "Date" %><br/>
+    <%= f.text_field :chosen_date, :class => 'chosen_date' %>
+    </p>
+    <p>
+    <%= f.label :content, "Content" %><br/>
+    <%= f.text_area :content, :rows => "10", :cols => "30" %>
+    </p>
+    <p><%= f.submit "Save" %></p>
+    <% end %>
