@@ -9,5 +9,12 @@ class MainsController < ApplicationController
     respond_to do |format|
       format.json { render json: @current_user }
     end
+
+    def calendar
+      @suggestion = Suggestion.new(suggestion_params)
+      @suggestion.user_id = current_user.id
+      @suggestion.save
+    end
+
   end
 end

@@ -1,9 +1,6 @@
 Rails.application.routes.draw do
 
-    root to: 'sessions#new'
-    resources :sessions, only: :index
-    get "/auth/:provider/callback" => 'sessions#create'
-
+    # get '/auth/google_oauth2' => 'sessions#create'
 
   resources :user_friends
 
@@ -43,7 +40,7 @@ Rails.application.routes.draw do
 
   get '/' => 'mains#index'
 
-
+  get '/calendar' => 'mains#calendar'
 
 
   # The priority is based upon order of creation: first created -> highest priority.
