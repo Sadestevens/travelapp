@@ -6,7 +6,7 @@ Rails.application.routes.draw do
 
   resources :comments, only: [:create, :index]
 
-  resources :suggestions, only: [:create, :destroy, :index]
+  resources :suggestions, only: [:create, :destroy, :index, :new]
 
   # resources :categories, only: [:create]
 
@@ -40,7 +40,7 @@ Rails.application.routes.draw do
 
   get '/' => 'mains#index'
 
-  get '/calendar' => 'mains#calendar'
+  get '/calendar' => 'suggestions#new'
 
 
   # The priority is based upon order of creation: first created -> highest priority.

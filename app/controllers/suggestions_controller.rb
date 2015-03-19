@@ -4,6 +4,10 @@ class SuggestionsController < ApplicationController
     @suggestions = Suggestion.all
   end
 
+  def new
+    @suggestion = Suggestion.new
+  end
+
   def create
     @suggestion = Suggestion.new(suggestion_params)
     @suggestion.user_id = current_user.id
