@@ -15,6 +15,7 @@ Rails.application.routes.draw do
   resources :users
 
   resource :session, only: [:new, :create, :destroy]
+  resource :calendar, only: [:index]
 
   get '/logout' => 'sessions#destroy'
 
@@ -42,6 +43,7 @@ Rails.application.routes.draw do
 
   get '/datepicker' => 'suggestions#new'
 
+  get '/calendar' => 'calendars#index'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

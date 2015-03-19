@@ -1,0 +1,8 @@
+<h1>Suggestions</h1>
+  <div id="calendar">
+    <% calendar_for @suggestions do |calendar| %>
+      <% calendar.day(:day_method => :chosen_date) do |date, suggestions| %>
+        <%= date.day %>
+      <% end %>
+    <% end %>
+  </div>
