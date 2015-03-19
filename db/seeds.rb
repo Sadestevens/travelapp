@@ -33,22 +33,22 @@ Category.create([
 
 Suggestion.create([
   { user_id: User.find_by(email: "tposs@gmail.com").id,      category_id: "1", title: "Food",      title: "Spring Break", title: "Los Caballos",       content: "amazingly delicious according to reviews",
-    link: "http://shechive.files.wordpress.com/2011/07/mexican-food-14.jpg",                                                                 upvote: "0", downvote: "0"},
+    link: "http://shechive.files.wordpress.com/2011/07/mexican-food-14.jpg",                                                                 upvote: "0", downvote: "0",    chosen_date: "April 20 2015"},
   { user_id: User.find_by(email: "sagekieran@gmail.com").id, category_id: "2", title: "lodging",   title: "Spring Break", title: "Hostel Airport Mexico DF", content: "we can stay here, it's a cool place to meet other travelers",
-    link: "http://u.hwstatic.com/propertyimages/4/41518/2.jpg",                                                                              upvote: "0", downvote: "0"},
+    link: "http://u.hwstatic.com/propertyimages/4/41518/2.jpg",                                                                              upvote: "0", downvote: "0",    chosen_date: "April 21 2015"},
   { user_id: User.find_by(email: "mikerembach@gmail.com").id,category_id: "3", title: "Adventure", title: "Spring Break", title: "Beach",              content: "this is the best beach & closest to the city, let's do this the first day!?",
-    link: "http://activerain.com/image_store/uploads/4/8/8/9/8/ar123636422589884.jpg",                                                       upvote: "0", downvote: "0"},
+    link: "http://activerain.com/image_store/uploads/4/8/8/9/8/ar123636422589884.jpg",                                                       upvote: "0", downvote: "0",    chosen_date: "April 22 2015"},
   { user_id: User.find_by(email: "sadestevens@gmail.com").id,category_id: "3", title: "Adventure", title: "Spring Break", title: "Horse riding tour",        content: "this place looks pretty cool from the pictures, we should check it out at some point",
-    link: "http://www.dosomethingdifferent.com/images/store/experience/landscape_image/1828/Horseback_Riding_In_The_Jungle8.jpg?1308854312", upvote: "0", downvote: "0"},
+    link: "http://www.dosomethingdifferent.com/images/store/experience/landscape_image/1828/Horseback_Riding_In_The_Jungle8.jpg?1308854312", upvote: "0", downvote: "0",    chosen_date: "April 23 2015"},
 
   { user_id: User.find_by(email: "tposs@gmail.com").id,      category_id: "4", title: "Food",      title: "Spring Break", title: "Los Caballos",       content: "amazingly delicious according to reviews",
-    link: "http://shechive.files.wordpress.com/2011/07/mexican-food-14.jpg",                                                                 upvote: "0", downvote: "0"},
+    link: "http://shechive.files.wordpress.com/2011/07/mexican-food-14.jpg",                                                                 upvote: "0", downvote: "0",    chosen_date: "April 24 2015"},
   { user_id: User.find_by(email: "sagekieran@gmail.com").id, category_id: "5", title: "lodging",   title: "Spring Break", title: "Hostel Airport Mexico DF", content: "we can stay here, it's a cool place to meet other travelers",
-    link: "http://u.hwstatic.com/propertyimages/4/41518/2.jpg",                                                                              upvote: "0", downvote: "0"},
+    link: "http://u.hwstatic.com/propertyimages/4/41518/2.jpg",                                                                              upvote: "0", downvote: "0",    chosen_date: "April 25 2015"},
   { user_id: User.find_by(email: "mikerembach@gmail.com").id,category_id: "6", title: "Adventure", title: "Spring Break", title: "Beach",              content: "this is the best beach & closest to the city, let's do this the first day!?",
-    link: "http://activerain.com/image_store/uploads/4/8/8/9/8/ar123636422589884.jpg",                                                       upvote: "0", downvote: "0"},
+    link: "http://activerain.com/image_store/uploads/4/8/8/9/8/ar123636422589884.jpg",                                                       upvote: "0", downvote: "0",    chosen_date: "April 26 2015"},
   { user_id: User.find_by(email: "sadestevens@gmail.com").id,category_id: "6", title: "Adventure", title: "Spring Break", title: "Horse riding tour",        content: "this place looks pretty cool from the pictures, we should check it out at some point",
-    link: "http://www.dosomethingdifferent.com/images/store/experience/landscape_image/1828/Horseback_Riding_In_The_Jungle8.jpg?1308854312", upvote: "0", downvote: "0"}
+    link: "http://www.dosomethingdifferent.com/images/store/experience/landscape_image/1828/Horseback_Riding_In_The_Jungle8.jpg?1308854312", upvote: "0", downvote: "0",    chosen_date: "April 27 2015"}
 ])
 
 

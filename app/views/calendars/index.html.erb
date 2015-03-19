@@ -1,4 +1,21 @@
-<h1>Suggestions</h1>
+<h1>All Suggestions</h1>
+  <% @suggestions.each do |suggestion| %>
+    <p>
+      <p><%= suggestion.category_id %></p>
+      <p><%= suggestion.title %></p>
+      <p><%= suggestion.content %></p>
+      <p><%= suggestion.chosen_date %><p>
+
+<!--       <p><%= link_to 'categories', @categories %></p>
+      <p><%= link_to 'Calendar', '/calendar' %></p>
+      <p><%= link_to 'Edit', 'edit_suggestion' %></p>
+      <p><%= link_to 'Destroy', suggestion, method: :delete, data: { confirm: 'Are you sure?' } %>< -->/p>
+    </p>
+  <% end %>
+
+
+
+<!-- <h1>Suggestions</h1>
   <div id="calendar">
     <% calendar_for @suggestions do |calendar| %>
       <% calendar.day(:day_method => :chosen_date) do |date, suggestions| %>
@@ -6,3 +23,4 @@
       <% end %>
     <% end %>
   </div>
+ -->

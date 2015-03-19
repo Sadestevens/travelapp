@@ -2,14 +2,6 @@
 <link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/themes/smoothness/jquery-ui.css" />
 <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
 
-<!--
-<p> Title: <input type="text" id="suggestion-title"/></p>
-<p> Content: <input type="text" id="suggestion-content"/></p>
-<p> Date: <input type="text" id="date-picker"/></p>
-<input type="submit", id="save-suggestion", "save"/>
- -->
-<h1>Add a Suggestion</h1><br/>
-
 <%= form_for(Suggestion.new) do |f| %>
   <div class="field">
     <%= f.label :category_id %><br>

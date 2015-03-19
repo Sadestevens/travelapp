@@ -12,6 +12,7 @@ class SuggestionsController < ApplicationController
     @suggestion = Suggestion.new(suggestion_params)
     @suggestion.user_id = current_user.id
     @suggestion.save
+    redirect_to '/calendar'
   end
 
   def index
@@ -51,6 +52,6 @@ class SuggestionsController < ApplicationController
   private
 
   def suggestion_params
-    @suggestion_params ||= params.require(:suggestion).permit(:title, :content, :link, :category_id)
+    @suggestion_params ||= params.require(:suggestion).permit(:title, :content, :chosen_date,:link, :category_id)
   end
 end
