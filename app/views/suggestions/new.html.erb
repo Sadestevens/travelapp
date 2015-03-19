@@ -14,14 +14,14 @@
 <body>
 
 
-<%= form_for Suggestion.new do |f| %>
+<%= form_for @suggestion do |f| %>
   <p>
   <%= f.label :title, "Title" %><br/>
   <%= f.text_field :title %>
   </p>
   <p>
   <%= f.label :chosen_date, "Date" %><br/>
-  <%= f.text_field :chosen_date %>
+  <%= f.text_field :chosen_date, :as => :string, :input_html => { :class => 'chosen_date'} %>
   </p>
   <p>
   <%= f.label :content, "Content" %><br/>
